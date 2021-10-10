@@ -3,10 +3,10 @@ const router = express.Router();
 
 const UsersController = require("../controller/users");
 
-//CREATE -> POST
+//CREATE -> POST http://localhost:5500/user1
 router.post("/user1", UsersController.createUsers);
 
-//READ -> GET
+//READ -> GET http://localhost:5500/getAll
 router.get("/getAll", UsersController.getAllUsers);
 
 //CREATE -> PUT
